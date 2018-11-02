@@ -13,8 +13,8 @@ class HomePage extends React.Component {
         const { user, users } = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
-                <h1>Hi {user.firstName}!</h1>
-                {users.loading && <em>Loading users...</em>}
+                <h1>Hello {user.firstName}!</h1>
+                {users.loading && <em>Loading...</em>}
                 {users.error && <span className="text-danger">ERROR: {users.error}</span>}
                 {users.items &&
                     <ul>
